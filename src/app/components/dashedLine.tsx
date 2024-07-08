@@ -5,7 +5,7 @@ import "./styles.css";
 const DashedLine = () => {
     useEffect(() => {
         const handleScroll = () => {
-        const scrolled = window.scrollY;
+        const scrolled = window.scrollY * -1;
         const dashedLine = document.querySelector('.dashed-line') as HTMLElement;
         if (dashedLine) {
             dashedLine.style.backgroundPosition = `0 ${scrolled}px`;
